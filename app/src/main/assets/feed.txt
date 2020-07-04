@@ -1,0 +1,171 @@
+{
+   "posts":[
+      {
+         "userPictureUrl":"file:///android_asset/user_picture_1.png",
+         "userName":"john_doe",
+         "postGeolocation":"Minsk, Belarus",
+         "postPhotosUrlsList":[
+            "file:///android_asset/post_photo_1.jpg",
+            "file:///android_asset/post_photo_2.jpg"
+         ],
+         "isLiked":true,
+         "isSaved":false,
+         "likes":{
+            "likedByList":[
+               "jacob_ai",
+               "mia_madison"
+            ],
+            "othersLiked":96
+         },
+         "comment":"Фотографии хамелеонов",
+         "mentionedList":[
+            "@anna_09",
+            "@daniel_craig",
+            "@greg_prof"
+         ],
+         "hashTagsList":[
+            "#life",
+            "#beauty",
+            "#nature",
+            "#sunny"
+         ],
+         "postDate":"17 SECONDS AGO"
+      },
+
+
+      {
+         "userPictureUrl":"file:///android_asset/user_picture_2.png",
+         "userName":"helen_frost",
+         "postPhotosUrlsList":[
+            "file:///android_asset/post_photo_3.jpg",
+            "file:///android_asset/post_photo_4.jpg",
+            "file:///android_asset/post_photo_5.jpg"
+         ],
+         "isLiked":false,
+         "isSaved":true,
+         "likes":{
+            "likedByList":[
+               "335kirsten",
+               "petr_official"
+            ],
+            "othersLiked":14
+         },
+         "comment":"Волки",
+         "mentionedList":[
+            "@family_gay",
+            "@kristina_99"
+         ],
+         "hashTagsList":[
+            "#animal",
+            "#forest",
+            "#green"
+         ],
+         "postDate":"29 MINUTES AGO"
+      },
+
+
+      {
+         "userPictureUrl":"file:///android_asset/user_picture_3.png",
+         "userName":"jeff_111",
+         "postGeolocation":"Panama",
+         "postPhotosUrlsList":[
+            "file:///android_asset/post_photo_6.jpg",
+            "file:///android_asset/post_photo_7.jpg",
+            "file:///android_asset/post_photo_8.jpg",
+            "file:///android_asset/post_photo_9.jpg"
+         ],
+         "isLiked":false,
+         "isSaved":false,
+         "likes":{
+            "likedByList":[
+               "forest_g"
+            ]
+         },
+         "comment":"Природа",
+         "mentionedList":[
+            "@lee_priest"
+         ],
+         "hashTagsList":[
+            "#good_mood",
+            "#fine_weather"
+         ],
+         "postDate":"5 HOURS AGO"
+      },
+
+
+      {
+         "userPictureUrl":"file:///android_asset/user_picture_4.png",
+         "userName":"diana_collin",
+         "postGeolocation":"Carlton Hotel",
+         "postPhotosUrlsList":[
+            "file:///android_asset/post_photo_10.jpg"
+         ],
+         "isLiked":true,
+         "isSaved":true,
+         "likes":{
+            "likedByList":[
+               "jayson_jayson",
+               "guam_official"
+            ],
+            "othersLiked":55
+         },
+         "postDate":"2 DAYS AGO"
+      },
+
+
+      {
+         "userName":"ivan_vanya",
+         "postGeolocation":"Харьков, Украина",
+         "postPhotosUrlsList":[
+            "file:///android_asset/post_photo_11.jpg",
+            "file:///android_asset/post_photo_12.jpg"
+         ],
+         "isLiked":true,
+         "isSaved":false,
+         "likes":{
+            "likedByList":[
+               "julia_555",
+               "victor_it"
+            ],
+            "othersLiked":2
+         },
+         "comment":"Любимый город Харьков",
+         "hashTagsList":[
+            "#walking",
+            "#weekend"
+         ],
+         "postDate":"23 HOURS AGO"
+      },
+
+
+      {
+         "userPictureUrl":"file:///android_asset/user_picture_5.png",
+         "userName":"little_big",
+         "postGeolocation":"Denmark",
+         "postPhotosUrlsList":[
+            "file:///android_asset/post_photo_13.jpg",
+            "file:///android_asset/post_photo_14.jpg",
+            "file:///android_asset/post_photo_15.jpg"
+         ],
+         "isLiked":true,
+         "isSaved":true,
+         "likes":{
+            "likedByList":[
+               "john_stone",
+               "marta_nor"
+            ],
+            "othersLiked":2478
+         },
+         "comment":"Концерт Little Big в Копенгагене",
+         "mentionedList":[
+            "@sis_kris",
+            "@dr_brown"
+         ],
+         "hashTagsList":[
+            "#concert",
+            "#fans"
+         ],
+         "postDate":"4 WEEKS AGO"
+      }
+   ]
+}

@@ -1,0 +1,10 @@
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/main_screen_checkbox_width"
+    android:height="@dimen/main_screen_checkbox_height"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:fillColor="@color/main_screen_checkbox_color"
+      android:pathData="m68.655,16.717c-6.224,0.776 -10.834,6.559 -11.131,12.606l0,456.576c0.472,13.696 12.005,15.485 19.468,8l178.936,-183.9l178.936,183.9c8.186,7.572 19.481,2.858 19.468,-8l0,-457.411c0.041,-7.517 -4.097,-11.63 -10.497,-11.989l-375.18,0.217z"/>
+</vector>

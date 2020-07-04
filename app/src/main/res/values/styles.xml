@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- Match parent style. -->
+    <style name="match_parent_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Wrap content style. -->
+    <style name="wrap_content_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Match constraint text style. -->
+    <style name="match_constraint_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Section name style. -->
+    <style name="section_name_style" parent="wrap_content_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/main_screen_text_size_large</item>
+        <item name="android:textColor">@color/main_screen_text_color_primary</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- User name style. -->
+    <style name="user_name_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/main_screen_text_size_medium</item>
+        <item name="android:textColor">@color/main_screen_text_color_primary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Post geolocation style. -->
+    <style name="post_geolocation_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/main_screen_text_size_medium</item>
+        <item name="android:textColor">@color/main_screen_text_color_secondary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- User picture style. -->
+    <style name="user_picture_style">
+        <item name="android:layout_width">@dimen/main_screen_user_picture_width</item>
+        <item name="android:layout_height">@dimen/main_screen_user_picture_height</item>
+        <item name="android:padding">@dimen/main_screen_user_picture_padding</item>
+        <item name="android:background">@drawable/main_screen_user_picture_background</item>
+    </style>
+
+    <!-- Main screen icon style. -->
+    <style name="main_screen_icon_style">
+        <item name="android:layout_width">@dimen/main_screen_icon_width</item>
+        <item name="android:layout_height">@dimen/main_screen_icon_height</item>
+        <item name="android:padding">@dimen/main_screen_icon_padding</item>
+    </style>
+
+    <!-- Main screen checkbox style. -->
+    <style name="main_screen_checkbox_style">
+        <item name="android:layout_width">@dimen/main_screen_checkbox_width</item>
+        <item name="android:layout_height">@dimen/main_screen_checkbox_height</item>
+        <item name="android:scaleX">@dimen/main_screen_checkbox_scaleX</item>
+        <item name="android:scaleY">@dimen/main_screen_checkbox_scaleY</item>
+    </style>
+
+    <!-- Stepper layout style. -->
+    <style name="stepper_layout_style">
+        <item name="android:layout_width">@dimen/main_screen_stepper_layout_width</item>
+        <item name="android:layout_height">@dimen/main_screen_stepper_layout_height</item>
+    </style>
+
+    <!-- Liked by style. -->
+    <style name="liked_by_style" parent="match_constraint_text_style">
+        <item name="android:textSize">@dimen/main_screen_text_size_medium</item>
+        <item name="android:textColor">@color/main_screen_text_color_primary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Comment mentions hash tags style. -->
+    <style name="comment_mentions_hash_tags_style" parent="match_constraint_text_style">
+        <item name="android:textSize">@dimen/main_screen_text_size_medium</item>
+        <item name="android:textColor">@color/main_screen_text_color_primary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Post date style. -->
+    <style name="post_date_style" parent="match_constraint_text_style">
+        <item name="android:textSize">@dimen/main_screen_text_size_small</item>
+        <item name="android:textColor">@color/main_screen_text_color_secondary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Toolbar style. -->
+    <style name="toolbar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+        <item name="android:paddingStart">@dimen/toolbar_padding_start</item>
+        <item name="android:paddingEnd">@dimen/toolbar_padding_end</item>
+        <item name="android:background">@drawable/toolbar_background</item>
+    </style>
+
+    <!-- Toolbar icon style. -->
+    <style name="toolbar_icon_style">
+        <item name="android:layout_width">@dimen/toolbar_icon_width</item>
+        <item name="android:layout_height">@dimen/toolbar_icon_height</item>
+        <item name="android:padding">@dimen/toolbar_icon_padding</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- Toolbar logo style. -->
+    <style name="toolbar_logo_style">
+        <item name="android:layout_width">@dimen/toolbar_logo_width</item>
+        <item name="android:layout_height">@dimen/toolbar_logo_height</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- Bottom navigation view style. -->
+    <style name="bottom_navigation_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bottom_navigation_view_height</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+        <item name="elevation">@dimen/bottom_navigation_view_elevation</item>
+        <item name="itemIconTint">@color/bottom_navigation_view_icon_color</item>
+        <item name="android:background">@drawable/bottom_navigation_view_background</item>
+    </style>
+
+</resources>

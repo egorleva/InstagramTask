@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        style="@style/match_parent_style">
+
+        <FrameLayout
+            style="@style/match_parent_style"
+            android:id="@+id/child_fragment"
+            android:layout_above="@id/bottom_navigation_view"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            style="@style/bottom_navigation_view_style"
+            android:id="@+id/bottom_navigation_view"
+            app:menu="@menu/bottom_navigation_view_menu"/>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ContentDescription">
+
+    <data>
+        <variable
+            name="post"
+            type="com.noxpa.instagramtask.data_classes.Post"/>
+
+        <variable
+            name="listener"
+            type="com.noxpa.instagramtask.adapters.PostsAdapter.OnPostClickListener"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/user_picture_style"
+            android:id="@+id/image_view_user_picture"
+            android:layout_marginStart="@dimen/space_large"
+            android:layout_marginTop="@dimen/space_medium"
+            android:src="@drawable/user_picture_default"
+            android:onClick="@{(view) -> listener.onUserPictureClick(post)}"
+            userPictureUrl="@{post.userPictureUrl}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_large"
+            android:layout_marginEnd="@dimen/space_large"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/image_view_user_picture"
+            app:layout_constraintEnd_toStartOf="@+id/image_view_options"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/image_view_user_picture"
+            app:layout_constraintTop_toTopOf="@+id/image_view_user_picture">
+
+            <TextView
+                style="@style/user_name_style"
+                android:id="@+id/text_view_user_name"
+                android:onClick="@{(view) -> listener.onUserNameClick(post)}"
+                android:text="@{post.userName}"
+                tools:text="@string/text_view_user_name_default"/>
+
+            <TextView
+                style="@style/post_geolocation_style"
+                android:id="@+id/text_view_post_geolocation"
+                tools:text="@string/text_view_post_geolocation_default"
+                post="@{post}"
+                postGeolocationListener="@{listener}"/>
+        </LinearLayout>
+
+        <ImageView
+            style="@style/main_screen_icon_style"
+            android:id="@+id/image_view_options"
+            android:layout_margin="@dimen/space_medium"
+            android:src="@drawable/main_screen_icon_options"
+            android:onClick="@{(view) -> listener.onOptionsClick(post)}"
+            app:layout_constraintBottom_toBottomOf="@+id/image_view_user_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/image_view_user_picture"
+            app:layout_constraintTop_toTopOf="@+id/image_view_user_picture"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_post_photos"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_screen_view_pager_height"
+            android:layout_marginTop="@dimen/space_medium"
+            postPhotosUrlsList="@{post.postPhotosUrlsList}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_user_picture"/>
+
+        <CheckBox
+            style="@style/main_screen_checkbox_style"
+            android:id="@+id/checkbox_like"
+            android:layout_marginStart="@dimen/space_medium"
+            android:layout_marginTop="@dimen/space_medium"
+            android:button="@drawable/main_screen_checkbox_like"
+            android:checked="@{post.liked}"
+            android:onClick="@{(view) -> listener.onLikeClick(post)}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_pager_post_photos"/>
+
+        <ImageView
+            style="@style/main_screen_icon_style"
+            android:id="@+id/image_view_comments"
+            android:layout_marginStart="@dimen/space_medium"
+            android:layout_marginTop="@dimen/space_medium"
+            android:layout_toEndOf="@id/checkbox_like"
+            android:src="@drawable/main_screen_icon_comments"
+            android:onClick="@{(view) -> listener.onCommentsClick(post)}"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_like"
+            app:layout_constraintTop_toBottomOf="@+id/view_pager_post_photos"/>
+
+        <ImageView
+            style="@style/main_screen_icon_style"
+            android:id="@+id/image_view_share"
+            android:layout_marginStart="@dimen/space_medium"
+            android:layout_marginTop="@dimen/space_medium"
+            android:layout_toEndOf="@id/image_view_comments"
+            android:src="@drawable/main_screen_icon_share"
+            android:onClick="@{(view) -> listener.onShareClick(post)}"
+            app:layout_constraintStart_toEndOf="@+id/image_view_comments"
+            app:layout_constraintTop_toBottomOf="@+id/view_pager_post_photos"/>
+
+        <com.google.android.material.tabs.TabLayout
+            style="@style/stepper_layout_style"
+            android:id="@+id/stepper_layout"
+            app:tabBackground="@drawable/stepper_dot_background"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_view_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_view_share"/>
+
+        <CheckBox
+            style="@style/main_screen_checkbox_style"
+            android:id="@+id/checkbox_save"
+            android:layout_marginTop="@dimen/space_medium"
+            android:layout_marginEnd="@dimen/space_medium"
+            android:button="@drawable/main_screen_checkbox_save"
+            android:checked="@{post.saved}"
+            android:onClick="@{(view) -> listener.onSaveClick(post)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_pager_post_photos"/>
+
+        <TextView
+            style="@style/liked_by_style"
+            android:id="@+id/text_view_liked_by"
+            android:layout_marginStart="@dimen/space_large"
+            android:layout_marginEnd="@dimen/space_large"
+            android:layout_marginTop="@dimen/space_medium"
+            tools:text="@string/text_view_liked_by_default"
+            post="@{post}"
+            likedListener="@{listener}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_like"/>
+
+        <TextView
+            style="@style/comment_mentions_hash_tags_style"
+            android:id="@+id/text_view_comment_mentions_hash_tags"
+            android:layout_marginStart="@dimen/space_large"
+            android:layout_marginEnd="@dimen/space_large"
+            android:layout_marginTop="@dimen/space_large"
+            tools:text="@string/text_view_comment_mentions_hash_tags_default"
+            post="@{post}"
+            commentMentionedHashTagsListener="@{listener}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_liked_by"/>
+
+        <TextView
+            style="@style/post_date_style"
+            android:id="@+id/text_view_post_date"
+            android:layout_margin="@dimen/space_large"
+            android:text="@{post.postDate}"
+            tools:text="@string/text_view_post_date_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_comment_mentions_hash_tags"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

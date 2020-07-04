@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_parent_style">
+
+    <TextView
+        style="@style/section_name_style"
+        android:text="@string/section_name_search"/>
+</FrameLayout>

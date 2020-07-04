@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toolbar colors. -->
+    <color name="toolbar_background_color">#ffffff</color>
+    <color name="toolbar_icon_color">#262626</color>
+    <color name="toolbar_logo_color">#262626</color>
+    <color name="toolbar_line_color">#b9bec3</color>
+
+    <!-- Bottom navigation view colors. -->
+    <color name="bottom_navigation_view_background_color">#ffffff</color>
+    <color name="bottom_navigation_view_icon_color">#262626</color>
+    <color name="bottom_navigation_view_line_color">#b9bec3</color>
+
+    <!-- Main screen colors. -->
+    <color name="main_screen_text_color_primary">#262626</color>
+    <color name="main_screen_text_color_secondary">#8d8d8d</color>
+    <color name="main_screen_icon_color">#262626</color>
+    <color name="main_screen_checkbox_color">#262626</color>
+    <color name="main_screen_checkbox_like_checked_color">#ff0000</color>
+    <color name="main_screen_user_picture_background_color">#b9bec3</color>
+    <color name="main_screen_stepper_checked_dot_background_color">#0699eb</color>
+    <color name="main_screen_stepper_unchecked_dot_background_color">#dadada</color>
+
+</resources>

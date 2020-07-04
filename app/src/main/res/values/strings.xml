@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Section names. -->
+    <string name="section_name_search">Раздел \"Поиск\"</string>
+    <string name="section_name_add">Раздел \"Добавить пост\"</string>
+    <string name="section_name_news">Раздел \"Что нового\"</string>
+    <string name="section_name_account">Раздел \"Аккаунт\"</string>
+
+    <!-- Text view defaults. -->
+    <string name="text_view_user_name_default">user_name</string>
+    <string name="text_view_post_geolocation_default">post_geolocation</string>
+    <string name="text_view_liked_by_default">Liked by user_1, user_2 and 31 others</string>
+    <string name="text_view_comment_mentions_hash_tags_default">user_name Comment @mentioned_1 @mentioned_2 @mentioned_3 #hashtag_1 #hashtag_2 #hashtag_3</string>
+    <string name="text_view_post_date_default">POST DATE</string>
+
+    <!-- Additional strings. -->
+    <string name="app_name">InstagramTask</string>
+    <string name="bottom_navigation_view_empty_item_title"> </string>
+
+</resources>

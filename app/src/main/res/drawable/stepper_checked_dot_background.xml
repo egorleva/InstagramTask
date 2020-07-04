@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid
+                android:color="@android:color/transparent"/>
+            <padding
+                android:top="@dimen/main_screen_stepper_dot_padding_top"
+                android:bottom="@dimen/main_screen_stepper_dot_padding_bottom"
+                android:left="@dimen/main_screen_stepper_dot_padding_left"
+                android:right="@dimen/main_screen_stepper_dot_padding_right"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape
+            android:shape="oval">
+            <solid
+                android:color="@color/main_screen_stepper_checked_dot_background_color"/>
+        </shape>
+    </item>
+
+</layer-list>
